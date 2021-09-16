@@ -915,18 +915,18 @@ section {
     margin: 0 auto;
     text-align: center;
     float: left;
-    left: 33%;
+    left: 40%;
     margin-bottom: 38px;
   }
   .slider-detail .carousel-inner .one .carousel-caption{
-    left: 20%; 
+    left: 30%; 
   }
 
   .slider-detail .carousel-inner .there .carousel-caption{
-    left: 24%; 
+    left: 30%; 
   }
-    .slider-detail .carousel-inner .four .carousel-caption{
-    left: 28%; 
+  .slider-detail .carousel-inner .four .carousel-caption{
+    left: 35%; 
   }
 
   .slider-detail .carousel-inner .carousel-item .btn{
