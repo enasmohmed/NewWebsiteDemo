@@ -45,17 +45,57 @@
 
 <body>
 
-  <div class="header-container container-fluid">
+  <div id="menu-jk" class="header-container container-fluid">
     <div class="header-top">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-3 col-md-12">
             <img src="assets/img/Business-elite-logo.png" alt="">
             <button class="navbar-toggler d-lg-none d-md-block " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
             </button>
           </div>
-          <div class="col-lg-9 d-none d-lg-block" style="top:22px;">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav m-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dox Solutions <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="">DoxERP</a></li>
+                              <li><a class="dropdown-item" href="">DoxBook</a></li>
+                              <li><a class="dropdown-item" href="">DoxCustomize</a></li>
+                            </ul>
+                          </li>  
+                          <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elite Solutions <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="">E-commerce Solutions</a></li>
+                              <li><a class="dropdown-item" href="">Mobile Applications</a></li>
+                              <li><a class="dropdown-item" href="">Digital Marketing</a></li>
+                            </ul>
+                          </li>  
+                          <li class="nav-item">
+                              <a class="nav-link" href="">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="l">Language</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+            </div> 
+          </div>
+          <div class="col-lg-3 d-none d-lg-block" style="top:22px;">
             <div class="wrapper">
               <div class="button">
                 <div class="icon">
@@ -76,57 +116,18 @@
                 </div>
                 <span><a href="https://api.whatsapp.com/send?phone=966566333723">+966 56 633 3723</a></span>
               </div>
-
             </div>
-
           </div>
+
         </div>
       </div>
-    </div>
-    <div id="menu-jk" class="header-bottom container-fluid">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav m-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dox Solutions <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="">DoxERP</a></li>
-                          <li><a class="dropdown-item" href="">DoxBook</a></li>
-                          <li><a class="dropdown-item" href="">DoxCustomize</a></li>
-                        </ul>
-                      </li>  
-                      <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elite Solutions <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="">E-commerce Solutions</a></li>
-                          <li><a class="dropdown-item" href="">Mobile Applications</a></li>
-                          <li><a class="dropdown-item" href="">Digital Marketing</a></li>
-                        </ul>
-                      </li>  
-                      <li class="nav-item">
-                          <a class="nav-link" href="">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="">Contact Us</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="l">Language</a>
-                      </li>
-                  </ul>
-              </div>
-          </nav>
-        </div>
     </div>
   </div>
 
 
   <!-- ================ Slider Sections ================== -->
   <div class="slider-detail">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -139,9 +140,9 @@
           <img class="d-block w-100 vert-move" src="assets/img/slider/Dox-Solutions/Dox Solutions - Desktop Pic-01.png" alt="First slide">
           <div class="carousel-caption fvgb d-md-block">
             <h5 class="animated bounceInDown">Dox Solutions</h5>
-            <p class="animated bounceInLeft">Dox Solutions Cloud Programs to <br>manage all business and control<br>
+            <p class="animated bounceInLeft">Dox Solutions Cloud Programs to manage all business<br> and control
               provisions on
-              their resources from <br>anywhere and at any time.<br></p>
+              their resources from anywhere<br> and at any time.<br></p>
 
             <div class="row vbh">
 
@@ -313,10 +314,18 @@
               <span class="card-text">
 
                 <ul>
-                  <li><a href="#"><i class="fab fa-facebook-messenger icon"></i></a></li>
-                  <li><a href="#"><i class="fab fa-whatsapp icon"></i></a></li>
-                  <li><a href="#"><i class="fas fa-comments icon"></i></a></li>
-                  <li><a href="#"><i class="fas fa-phone icon"></i></a></li>
+                  <li><a href="https://web.facebook.com/businesselitesoft">
+                    <i class="fab fa-facebook-messenger icon"></i></a>
+                  </li>
+                  <li><a href="https://api.whatsapp.com/send?phone=966566333723">
+                    <i class="fab fa-whatsapp icon"></i></a>
+                  </li>
+                  <li><a href="mailto:contactus@businesselitesoft.com">
+                    <i class="fas fa-comments icon"></i></a>
+                  </li>
+                  <li><a href="+966 12 667 6677"><
+                    i class="fas fa-phone icon"></i></a>
+                  </li>
                 </ul>
 
               </span>
@@ -617,7 +626,7 @@
 
 
   <!-- Links -->
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
   <div id="preloader"></div>
 
 

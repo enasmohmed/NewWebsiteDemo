@@ -115,3 +115,5 @@ $( document ).ready(function() {
       card14.style.setProperty('--mouseY12', 0);
 
     });
+
+
