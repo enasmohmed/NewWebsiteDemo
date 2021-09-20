@@ -291,7 +291,7 @@ Start New Social Media
   text-align: right;
   padding: 10px;
   border-radius: 0 30px 30px 0;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .body-social-media .social ul li:hover{
@@ -1010,13 +1010,13 @@ Start New Social Media
   }
 }
  .video-overlay {
-   position: fixed;
+/*   position: fixed;*/
    z-index: -1;
    top: 0;
    bottom: 0;
    left: 0;
    right: 0;
-   background: rgba(0, 0, 0, 0.80);
+   background: rgba(0, 0, 0, 0.90);
    opacity: 0;
    transition: all ease 500ms;
 }
