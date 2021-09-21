@@ -121,7 +121,7 @@ $( document ).ready(function() {
 $('#play-video').on('click', function(e){
   e.preventDefault();
   $('#video-overlay').addClass('open');
-  $("#video-overlay").append('<iframe width="560" height="315" src="https://drive.google.com/file/d/1rI8O3tKUM3jSpbq1SiB9yqqNL67801yr/view?usp=sharing" frameborder="0" allowfullscreen></iframe>');
+  $("#video-overlay").append('<iframe class="show-video" width="560" height="315" src="https://drive.google.com/file/d/1rI8O3tKUM3jSpbq1SiB9yqqNL67801yr/view?usp=sharing" frameborder="0" allowfullscreen></iframe>');
 });
 
 $('.video-overlay, .video-overlay-close').on('click', function(e){
