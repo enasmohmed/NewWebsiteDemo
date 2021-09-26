@@ -805,23 +805,26 @@ Start New Social Media
     position: relative;
     float: left;
     margin: 0 auto;
-    align-items: center;
+    text-align: center !important;
   }
    .slider-detail .carousel-inner .two .carousel-caption{
     left: 6%; 
     position: relative;
     float: left;
+    text-align: center !important;
   }
 
   .slider-detail .carousel-inner .there .carousel-caption{
     left: 6%; 
     position: relative;
     float: left;
+    text-align: center !important;
   }
   .slider-detail .carousel-inner .four .carousel-caption{
     left: 6%; 
     position: relative;
     float: left;
+    text-align: center !important;
   }
 
   .slider-detail .carousel-inner .carousel-item .btn{
