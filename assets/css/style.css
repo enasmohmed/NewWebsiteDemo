@@ -38,14 +38,14 @@ html {
 ::-webkit-scrollbar {
     width: 10px;
     height: 5px;
-    border: 1px dashed #36489e; 
+    border: 1px dashed #252e67; 
     background: #ddd;
     /* border-radius: 20px; */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #36489e;
-    border: 1px solid #36489e;
+    background: #252e67;
+    border: 1px solid #252e67;
     border-radius: 50px;
 }
 /*--------------------------------------------------------------
@@ -223,8 +223,8 @@ section {
 
 .header-container {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background-image: linear-gradient(90deg,#1f3567 0%,#36489e 100%) !important;
-  background: #36489e !important;
+  background-image: linear-gradient(90deg,#1f3567 0%,#252e67 100%) !important;
+  background: #252e67 !important;
   position: absolute;
   z-index: 990 !important; 
 }
@@ -256,8 +256,8 @@ section {
   width: 100%;
 }
 .header-container .header-top img {
-    margin-top: 0px;
-    width: 57%;
+    margin-top: -12px;
+    width: 66%;
 }
 @media screen and (max-width: 991px) {
   .header-container .header-top img {
@@ -327,7 +327,7 @@ Start New Social Media
 .body-social-media .social ul li a i{
   text-align: center;
   margin-left: 14px;
-  color: #36489e;
+  color: #252e67;
   background-color: #ffffff;
   padding: 1px;
   border-radius: 50%;
@@ -408,7 +408,7 @@ Start New Social Media
   margin-top: -14px;
 }
 .header-container .header-bottom {
-  background-color: #36489e; 
+  background-color: #252e67; 
 /*  background-color: rgba(0,0,0,0.1);*/
 /*  border-bottom: 2px solid #ddd;*/
 /*  position: fixed;
@@ -423,7 +423,7 @@ Start New Social Media
 }
 @media (max-width: 767px) {
   .header-container .header-top .navbar{
-    background-color: #36489e !important;
+    background-color: #252e67 !important;
     padding: 0px !important;
      position: relative !important; 
     top: 23% !important;
@@ -435,7 +435,7 @@ Start New Social Media
   }
 }
 .header-container .header-top .navbar {
-    /* background-color: #36489e !important; */
+    /* background-color: #252e67 !important; */
     padding: 0px;
     position: absolute;
     top: 23%;
@@ -445,7 +445,7 @@ Start New Social Media
 .header-container .header-top .navbar .navbar-brand {
   color: #FFF; }
 .header-container .header-top .navbar .nav-link {
-  color: #FFF;
+  color: #ddd;
   padding: 11px 20px;
   font-family: 'Cairo', sans-serif !important;
   font-size: 18px;
@@ -454,7 +454,7 @@ Start New Social Media
 }
 
 .header-container .header-top .navbar .nav-link:hover{
-  color: rgb(107, 114, 212);
+  color: #FFF;
   font-size: 19px;
 }
 
@@ -567,7 +567,7 @@ Start New Social Media
 
 .dropdown .dropdown-menu:hover{
   background-color: rgb(107, 114, 212);
-  color: #36489e;
+  color: #252e67;
 }
 
 @media (max-width: 1366px) {
@@ -895,8 +895,8 @@ Start New Social Media
 }
 
 .slider-detail .vbh .btn:hover{
-  background-color: #36489e;
-  border: 2px solid #36489e;
+  background-color: #252e67;
+  border: 2px solid #fff;
   cursor: pointer;
   font-weight: bold;
 }
@@ -915,8 +915,8 @@ Start New Social Media
 }
 
 .slider-detail .vbh  .btn-watch-video:hover{
-  background-color: #36489e;
-  border: 2px solid #36489e;
+  background-color: #252e67;
+  border: 2px solid #fff;
   cursor: pointer;
   font-weight: bold;
 }
@@ -1049,7 +1049,7 @@ Start New Social Media
   background: rgba(198, 16, 0, 0);
 }
 .slider-detail .carousel-inner .carousel-caption .play-btn:hover::after {
-  border-left: 15px solid #36489e;
+  border-left: 15px solid #252e67;
   transform: scale(20);
 }
 .slider-detail .carousel-inner .carousel-caption .play-btn:hover::before {
@@ -1161,7 +1161,7 @@ Start New Social Media
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background-color: #36489e;
+  background-color: #252e67;
 /*  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9));*/
   background-size: cover;
   padding: 29px 0;
@@ -1174,6 +1174,54 @@ Start New Social Media
   font-style: italic;
   font-family: 'Cairo', sans-serif !important;
   text-transform: capitalize;
+
+  text-shadow: 0 0 5px #252e67, 0 0 15px #fff, 0 0 20px #252e67, 0 0 40px #fff, 0 0 60px #000, 0 0 10px #fff, 0 0 98px #000;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #252e67, 0 0 15px #fff, 0 0 20px #252e67, 0 0 40px #fff, 0 0 60px #000, 0 0 10px #fff, 0 0 98px #000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #fff, 0 0 15px #252e67, 0 0 20px #fff, 0 0 40px #252e67, 0 0 60px #000, 0 0 10px #fff, 0 0 98px #000;
+    color: #fff;
+  }
 }
 
 
@@ -1390,7 +1438,7 @@ Start New Social Media
 }
 
 .our-content .card .card-body .card-text ul li:nth-child(3) a:before {
-  background: #36489e;
+  background: #252e67;
 }
 
 .our-content .card .card-body .card-text ul li:nth-child(4) a:before {
@@ -1478,7 +1526,7 @@ font-style: italic;
   display: table;
   padding: 0.6em 3em;
   background: #6072c552;
-  color: #36489e;
+  color: #252e67;
   text-decoration: none;
   text-transform: capitalize;
   margin: 1em auto 0;
@@ -1490,7 +1538,7 @@ font-style: italic;
 .service-row .card:hover .card__btn{
   cursor: pointer;
   color: #fff;
-  background-color: #36489e;
+  background-color: #252e67;
   border: 2px solid #cccccc;
 }
 /** * Card #12 */
@@ -1583,7 +1631,7 @@ font-style: italic;
 .video-caption h4 {
   line-height: 26px;
   font-size: 21px;
-  color: #36489e;
+  color: #252e67;
   text-transform: none;
 }
 
@@ -1612,8 +1660,8 @@ font-style: italic;
 
 .video-caption:hover .video-icon{
   background:#FFF;
-  border-color:#FFF;
-  color:#7EC13F;
+  border:3px solid #252e67;
+  color:#252e67;
 }
 
 .video-caption .video-caption-info {
@@ -1693,7 +1741,7 @@ font-style: italic;
 }
 .cards-work-container h2{
   font-size: 37px;
-  color: #36489e;
+  color: #252e67;
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 23px;
@@ -1839,7 +1887,7 @@ font-style: italic;
   padding-top: 10px;
   font-size: 18px;
   font-weight: 500;
-  color: #36489e;
+  color: #252e67;
 }
 
 /* Hidding the entire so anything we put in will only show on hover */
@@ -2057,7 +2105,7 @@ font-style: italic;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #36489e;
+  background: #252e67;
 }
 
 #footer .copyright {
@@ -2134,4 +2182,6 @@ font-style: italic;
 /*-----------------------------------------------------
 # Contact Us Sections 
 ------------------------------------------------------*/
+
+
 

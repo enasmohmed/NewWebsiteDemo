@@ -54,7 +54,7 @@ $( document ).ready(function() {
         'share': false
       });
     });
-    
+
   // Init AOS
   function aos_init() {
     AOS.init({
@@ -130,4 +130,7 @@ $( document ).ready(function() {
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+
+
+
 
