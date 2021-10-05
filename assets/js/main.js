@@ -66,6 +66,7 @@ $( document ).ready(function() {
     aos_init();
   });
 
+
 })(jQuery);
 
 
@@ -130,10 +131,6 @@ $( document ).ready(function() {
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
-
-
-
-
 
 
 
