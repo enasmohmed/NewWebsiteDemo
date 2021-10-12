@@ -591,6 +591,207 @@ Start New Social Media
 
 /* ===================================== Slider CSS ================================== */
 
+
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+/*  background-color: #b61924;
+  background-image: url('');*/
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
+}
+
+/* Start Header Slider  */
+.header__slider {
+
+}
+
+.card .header__slider__img{
+  position: absolute;
+  margin: 0 auto;
+  align-items: center;
+  right: 3%;
+  width: 24rem;
+  top: -8%;
+}
+.card .card-body{
+  position: absolute;
+  top: 49%;
+  padding: 12px !important;
+}
+
+.card .card-body .card-title{
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.card .card-body  .card-text{
+  font-size: 12px;
+  text-align: justify;
+}
+
+ .card-carousel {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 220px;
+    max-width: 100%;
+    height: 450px;
+    perspective: 2000px;
+    perspective-origin: top;
+    top: 15%;
+    left: 39%;
+/*    z-index: 9999;*/
+}
+ .card-carousel .button-spin {
+  position: absolute;
+  top: 50%;
+  left: 205%;
+  color: #fff;
+  font-size: 20px;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-weight: 800;
+  padding: 10px 16px;
+  text-shadow: 1px 1px 4px rgb(0 54 90 / 50%);
+}
+ .card-carousel .button-spin:hover {
+   box-shadow: 0px 4px 4px 4px rgba(0, 54, 90, .15);
+}
+ .card-carousel .button-spin:active {
+   box-shadow: none;
+}
+ .card-carousel .button-spin.counterclockwise {
+  left: -126%;
+  font-size: 20px;
+}
+ .card-carousel .button-spin.clockwise {
+   right: 20%;
+}
+ .card-carousel .inner-carousel {
+   position: relative;
+   width: 225px;
+   margin: 0 auto;
+   top: 80px;
+   transform-style: preserve-3d;
+}
+ .card-carousel .inner-carousel > div {
+   position: absolute;
+   margin: 0 auto;
+   padding: 20px;
+   width: 220px;
+   height: 330px;
+   opacity: 1;
+   background-color: #fff;
+   color: #000;
+   border-radius: 10px;
+   transition: all 0.5s ease-out;
+   z-index: 1;
+   box-shadow: 0px 10px 10px 10px rgba(0, 54, 90, .15);
+}
+ .card-carousel .inner-carousel > div:after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   opacity: 0.6;
+   background-color: #ddd;
+   z-index: 1;
+}
+ .card-carousel .inner-carousel > div.counterclockwise:after, .card-carousel .inner-carousel > div.clockwise:after {
+   opacity: 0.4;
+   cursor: pointer;
+}
+ .card-carousel .inner-carousel > div.front:after {
+   content: none;
+}
+ .card-carousel .inner-carousel > div.front {
+/*   background-color: #1c9577;*/
+    background: linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
+   color: #fff;
+   padding: 10px;
+   border: 5px solid #fff;
+}
+ .card-carousel .inner-carousel > div.front a {
+   box-shadow: 0px 5px 5px 5px rgba(0, 54, 90, .15);
+}
+ .card-carousel .inner-carousel > div.front a:hover, .card-carousel .inner-carousel > div.front a:focus {
+   border: 2px solid #48cfad;
+   padding: 5px 0;
+}
+ .card-carousel .inner-carousel > .card:active {
+   box-shadow: none;
+}
+ .card-carousel .inner-carousel > div a {
+   position: absolute;
+   text-align: center;
+   bottom: 30px;
+   display: block;
+   width: 180px;
+   border: 1px solid #c9c9c9;
+   border-radius: 16px;
+   padding: 6px 0;
+   font-size: 12px;
+   font-weight: 500;
+   color: #000;
+   text-decoration: none;
+   background-color: #fff;
+   box-shadow: 0px 5px 8px 3px rgba(0, 54, 90, .10);
+}
+
+
+/* End Header Slider  */
+
 .slider-detail {
   padding-top: 91px; 
 }
@@ -1146,7 +1347,6 @@ Start New Social Media
 }
 
 /* ========================= Button Haver ======================== */ 
- 
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -1342,6 +1542,8 @@ Start New Social Media
   padding: 20px;
   text-transform: uppercase;
 }
+
+
 .cards-container .card-body{
   text-align: center;
   color: #000;
@@ -1409,6 +1611,122 @@ Start New Social Media
   transform: rotate(0deg);
 }
 
+
+/** Cards Dox Solutions **/
+.cards__box{
+/*  width:100%;*/
+  display:flex;
+  /*justify-content:center;
+  align-items:center;*/
+/*  flex-wrap:wrap;*/
+}
+
+@media (max-width: 992px) {
+  .cards__box{
+    
+  }
+}
+
+@media (max-width: 575px) {
+
+}
+.Box{
+  position:relative;
+  width: 21rem;
+  min-height:350px;
+  transform-style:preserve-3d;
+  perspective:800px;
+  transition:1s;
+  margin:10px;
+}
+.Box .FlipBox{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height: 100%;
+  transition:1s;
+  transform-style:preserve-3d;
+  box-shadow:0px 0px 10px 2px rgba(0,0,0,.3);
+}
+.Box .Front,
+.Box .Back{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  cursor:pointer;
+  transition:.5s;
+  backface-visibility:hidden;
+}
+.Box .Front img{
+  width:100%;
+  height:100%;
+}
+.Box .Back{
+  background:linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
+  color:#fff;
+  display:table;
+  transform:rotateY(180deg);
+}
+.Box .Back div{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  padding:20px;
+}
+.Box .Back div h3{
+  font-size:22px;
+}
+.Box .Back div p{
+  font-size:17px;
+  margin-top:10px;
+}
+.Box .Back div a{
+  color:#fff;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
+  width:120px;
+  height:45px;
+  background-color:#fff;
+  color:#222;
+  line-height:45px;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  transition:.5s;
+  font-weight:bold;
+}
+.Box .Back div a:hover{
+  background:linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
+  color:#fff;
+  border: 2px solid #FFF;
+  font-weight: bold;
+}
+.Box:hover .FlipBox{
+  transform:rotateY(180deg);
+}
+.Box:hover{
+  transform:translateY(-30px);
+  z-index:2;
+}
+@media (max-width:780px){
+  .Box:not(:last-child):hover{
+    transform:translateY(0px);
+    z-index:2;
+  }
+}
+@media (max-width:520px){
+  .Box:hover{
+    transform:translateY(0px);
+    z-index:2;
+  }
+}
+@media (max-width:255px){
+  .Box{
+    width:100%;
+  }   
+}
 
 
 /* ===================================== Let Us Connect ================================== */
@@ -1808,6 +2126,7 @@ font-style: italic;
 }
 
 
+
 /* ===================================== Way We Work Sections ================================== */
 .cards-work-container{
   text-align: center;
@@ -1815,6 +2134,7 @@ font-style: italic;
   margin: 21px auto;
   background-color: #dddddd7a;
   margin-bottom: 40px;
+  padding-bottom: 0px;
 }
 .cards-work-container h2{
   font-size: 37px;
@@ -1827,12 +2147,14 @@ font-style: italic;
 }
 
 
+
 .cards-work-container p {
   color: #0c153e;
   font-size: 18px;
   font-weight: 600;
   font-style: italic;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
+  margin-left: 10%;
 }
 
 @media (max-width: 992px) {
@@ -1874,6 +2196,106 @@ font-style: italic;
   cursor: pointer;
 
 }
+
+/** Testing **/
+
+.grid {
+  width: 100%;
+  max-width: 60rem;
+  margin-left: 10%;
+  margin-right: 0;
+  margin-top: -9%;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-block {
+  width: 50%;
+  min-height: 11.25rem;
+  padding: 1rem;
+}
+
+.image-grid {
+  -webkit-transform: rotateX(46deg) rotateZ(12deg);
+  transform: rotateX(46deg) rotateZ(12deg);
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.image-grid .tile-link:hover .tile-img {
+  top: -1rem;
+  left: -1rem;
+}
+
+.image-grid .tile-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: opacity, top, left, box-shadow;
+  transition-property: opacity, top, left, box-shadow;
+  border: 2px solid #252e67;
+}
+
+.tile-link {
+  display: block;
+}
+
+.tile-link:hover .tile-img {
+  opacity: 1;
+}
+
+.tile-link:hover .tile-img-link {
+  display: block;
+}
+
+.tile-link:hover .tile-img-link:hover .tile-img {
+  opacity: 0.5;
+}
+
+.grid .card-body:hover .card-title{
+}
+.tile-img, .grid .card-body .card-title {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.125s;
+  transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.tile-link:hover .tile-img1 {
+  box-shadow: 5px 5px rgba(244, 170, 200, 0.4),
+    10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
+    20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+}
+
+.tile-link:hover .tile-img2 {
+  box-shadow: 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+    15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+    25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.tile-link:hover .tile-img3 {
+  box-shadow: 5px 5px rgba(214, 221, 244, 0.4),
+    10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
+    20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.tile-link:hover .tile-img4 {
+  box-shadow: 5px 5px rgba(82, 119, 192, 0.4), 10px 10px rgba(82, 119, 192, 0.3),
+    15px 15px rgba(82, 119, 192, 0.2), 20px 20px rgba(82, 119, 192, 0.1),
+    25px 25px rgba(82, 119, 192, 0.05);
+}
+
+
+/** Testing **/
+
 /* ===================================== Blog CSS ================================== */
 
 .blog-content{
@@ -2805,3 +3227,118 @@ font-style: italic;
   }
 }
 
+
+/** **/
+
+.services  {
+   max-width: 100vw;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 35px;
+   margin: 0 auto;
+   padding: 40px 0;
+}
+.services .card {
+    position: relative;
+    width: 21rem;
+    height: 400px;
+    margin: 6% auto;
+/*    background: #000;*/
+    background:linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgb(0 0 0 / 50%);
+}
+.services  .card .face {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.services  .card .face.face1 {
+   box-sizing: border-box;
+   padding: 20px;
+   align-items: center;
+}
+.services  .card .face.face1 h2 {
+  padding: 0;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.services  .card .face.face1 .java {
+   background-color: #fff;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.services  .card .face.face1 .python {
+   background-color: #fff;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.services  .card .face.face1 .cSharp {
+   background-color: #fff;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.services  .card .face.face2 {
+   transition: 0.5s;
+}
+.services  .card .face.face2 h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 10em;
+   color: #fff;
+   transition: 0.5s;
+   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   z-index: 10;
+}
+.services  .card:hover .face.face2 {
+   height: 60px;
+}
+.services  .card:hover .face.face2 h2 {
+   font-size: 2em;
+}
+.services  .card:nth-child(1) .face.face2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-image: url(../img/home-pages/Digital-Marketing.jpg);
+}
+.services  .card:nth-child(2) .face.face2 {
+  border-radius: 15px;
+  background-image: url(../img/home-pages/Mobile-Application.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services  .card:nth-child(3) .face.face2 {
+  border-radius: 15px;
+  background-image: url(../img/home-pages/Ecommerce-Solutions.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services .card  .card__btn {
+  display: table;
+  padding: 0.6em 3em;
+  background: #6072c552;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 1em auto 0;
+  border: 2px solid #cccccc;
+  font-size: 17px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.services .card .card__btn:hover{
+  cursor: pointer;
+  color: #252e67;
+  background-color: #fff;
+  border: 2px solid #cccccc;
+}

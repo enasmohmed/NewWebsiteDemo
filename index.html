@@ -44,6 +44,7 @@
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 
   <!-- =======================================================
   * Template Name:Business Elite
@@ -133,16 +134,65 @@
 
   <!-- ================ Start Video ================== -->
 
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
 
+
+  <div class="card-carousel" id="debug_id_1">
+    <button class="button-spin counterclockwise">&lt;</button>
+    <div class="inner-carousel">
+
+      <div class="card active" style="width: 16rem;">
+        <img class="card-img-top header__slider__img" src="assets/img/slider/Dox-Solutions/resize/Dox Solutions - DesktopPic-01-min.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Dox Solutions</h5>
+          <p class="card-text">Dox Solutions Cloud Programs to manage all business and control provisions on their resources from anywhere and at any time.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top header__slider__img" src="assets/img/slider/Digital-Marketting//resize/Digital-Marketting-Desktop-Pic-01-min.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text">- Marketing plans<br>- Social networking management<br>- Configuring search engines<br>- Advertising campaigns
+          </p>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top header__slider__img" src="assets/img/slider/Mobile-Apps/resize/Mobile-Apps-Development-Desktop-01-min.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mobile Applications</h5>
+          <p class="card-text">We develop mobile applications that meet companies and improve their activities in a professional and innovative manner.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top header__slider__img" src="assets/img/slider/E-Commerce-Desktop/resize/E-Commerce-Desktop-Pic-01-min.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">E-commerce Solutions</h5>
+          <p class="card-text">The strength of your business activity through the creation of an electronic website is your distinctive gateway in the e-commerce.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <button class="button-spin clockwise">&gt;</button>
+  </div>
 
   <!-- ================ Slider Sections ================== -->
-  <div class="slider-detail">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="18000">
+  
+
+<!--   <div class="slider-detail">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="25000">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li id="slider__li" data-target="#carouselExampleIndicators" data-slide-to="0" 
+        class="active" onclick="typing(0)"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"  onclick="typing(1)" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"  onclick="typing(2)" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"  onclick="typing(3)"></li>
       </ol>
       <div class="carousel-inner">
 
@@ -151,7 +201,7 @@
             alt="First slide">
           <div class="carousel-caption fvgb d-md-block col-sm-4">
             <h5 class="animated bounceInDown">Dox Solutions</h5>
-            <p class="animated bounceInLeft letter" id="typedtext"></p>
+            <p class="animated bounceInLeft letter" id="typedtext0"></p>
 
             <div class="row vbh d-lg-flex">
 
@@ -169,17 +219,12 @@
             alt="Third slide">
           <div class="carousel-caption vdg-cur d-md-block col-sm-4">
             <h5 class="animated bounceInDown">Digital Marketing</h5>
-            <p class="animated bounceInLeft letter" id="typedtext">- Marketing plans<br>
-              - Social networking management <br>
-              - Configuring search engines<br>
-              - Advertising campaigns</p>
-
+            <p class="animated bounceInLeft letter" id="typedtext1"></p>
             <div class="row vbh">
 
               <div class="btn  animated bounceInUp"> More Details </div>
               <a href="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff"
-                class="venobox btn-watch-video animated bounceInUp" data-vbtype="video" data-autoplay="true"> Watch
-                Video <i class="icofont-play-alt-2"></i>
+                class="venobox btn-watch-video animated bounceInUp" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i>
               </a>
 
             </div>
@@ -191,15 +236,13 @@
             alt="Third slide">
           <div class="carousel-caption vdg-cur d-md-block col-sm-4">
             <h5 class="animated bounceInDown">Mobile Applications</h5>
-            <p class="animated bounceInLeft letter" id="typedtext">We develop mobile applications that meet companies<br> and improve their
-              activities in a professional and <br>innovative manner.<br></p>
+            <p class="animated bounceInLeft letter" id="typedtext2"></p>
 
             <div class="row vbh">
 
               <div class="btn animated bounceInUp"> More Details </div>
               <a href="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff"
-                class="venobox btn-watch-video animated bounceInUp" data-vbtype="video" data-autoplay="true"> Watch
-                Video <i class="icofont-play-alt-2"></i>
+                class="venobox btn-watch-video animated bounceInUp" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i>
               </a>
 
             </div>
@@ -211,9 +254,7 @@
             alt="Third slide">
           <div class="carousel-caption vdg-cur d-md-block col-sm-4">
             <h5 class="animated bounceInDown">E-commerce Solutions</h5>
-            <p class="animated bounceInLeft letter" id="typedtext">The strength of your business activity through <br>
-              the creation of an electronic website is your<br>
-              distinctive gateway in the e-commerce</p>
+            <p class="animated bounceInLeft letter" id="typedtext3"></p>
 
             <div class="row vbh">
 
@@ -228,17 +269,20 @@
         </div>
 
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onclick="changePhoto(-1)">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onclick="changePhoto(1)">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div> 
+  </div>  -->
   <!-- End Slider -->
+
+
+
 
   <main id="main">
 
@@ -263,57 +307,73 @@
         <h2 class="title">Dox Solutions</h2>
         <div class="row mt-5">
 
-          <div class="col-md-4">
-            <div class="card baseBlock">
-              <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180"
-                style="height: 180px; width: 100%; display: block;" src="assets/img/cards/DoxERP-BG-Logo-01.png"
-                data-holder-rendered="true">
-              <div class="card-body">
-                <h4 class="card-title">DoxERP</h4>
-                <p class="card-text">DoxERP Cloud Application System allow organizations from small to mid-level,
-                  startups
-                  & emerging businesses to build, grow & manage their resource management assets, stores, sales,
-                  procurement, employees..</p>
-                <a href="#" class="btn mt-3">More Details</a>
+
+          <div class="cards__box">
+            <div class="Box col-md-4">
+              <div class="FlipBox">
+                <div class="Front">
+                  <img src="assets/img/cards/DoxERP-BG-Logo-01.png">
+                </div>
+                <div class="Back">
+                  <div>
+                  <h3>DoxERP</h3>
+                  <p>
+                    DoxERP Cloud Application System allow organizations from small to mid-level,
+                    startups
+                    & emerging businesses to build, grow & manage their resource management assets, stores, sales,
+                    procurement, employees..
+                  </p>
+                  <a href="#">More Details</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card baseBlock">
-              <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180"
-                style="height: 180px; width: 100%; display: block;" src="assets/img/cards/DoxBook-BG-Logo-01.png"
-                data-holder-rendered="true">
-              <div class="card-body">
-                <h4 class="card-title">DoxBOOK</h4>
-                <p class="card-text">DoxBook Cloud Application is an accounting solution which helps small scale
-                  organization to manage their financial operations, sales, inventory in a single platform which is cost
-                  effective & pocket friendly.</p>
-                <a href="#" class="btn mt-3">More Details</a>
+
+            <div class="Box col-md-4">
+              <div class="FlipBox">
+                <div class="Front">
+                  <img src="assets/img/cards/DoxCUSTOMIZE-01.jpg">
+                </div>
+                <div class="Back">
+                  <div>
+                  <h3>Dox CUSTOMIZE</h3>
+                  <p>
+                     Dox Customize We provide business solutions that can help your idea grow right from
+                    scratch. Our tailor made strategy can help you customize all your requirements as per your need. Let
+                    our
+                    passionate team help you..
+                  </p>
+                  <a href="#">More Details</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card baseBlock">
-              <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180"
-                style="height: 180px; width: 100%; display: block;" src="assets/img/cards/DoxCUSTOMIZE-01.jpg"
-                data-holder-rendered="true">
-              <div class="card-body">
-                <h4 class="card-title">Dox CUSTOMIZE</h4>
-                <p class="card-text">Dox Customize We provide business solutions that can help your idea grow right from
-                  scratch. Our tailor made strategy can help you customize all your requirements as per your need. Let
-                  our
-                  passionate team help you..</p>
-                <a href="#" class="btn mt-3">More Details</a>
+
+            <div class="Box col-md-4">
+              <div class="FlipBox">
+                <div class="Front">
+                  <img src="assets/img/cards/DoxBook-BG-Logo-01.png">
+                </div>
+                <div class="Back">
+                  <div>
+                  <h3>DoxBOOK</h3>
+                  <p>
+                    DoxBook Cloud Application is an accounting solution which helps small scale
+                    organization to manage their financial operations, sales, inventory in a single platform which is cost
+                    effective & pocket friendly.
+                  </p>
+                  <a href="#">More Details</a>
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
       </div>
+
     </div> <!-- End Dox Solutions -->
-
-    <!-- *********** Testing *****************-->
-
 
     <!-- ============= Elite Solutions Sections =========== --->
     <div class="services contaienr-fluid">
@@ -321,38 +381,51 @@
         <div class="session-title">
           <h2 class="elite-title">Elite Solutions</h2>
         </div>
-        <div class="service-row row">
-
-          <div class="col-md-4 card card--12">
-            <h2 class="card__title">Digital Marketing</h2>
-            <img class="card__img" src="./assets/img/home-pages/Digital-Marketing.jpg" alt="">
-            <p class="card__text">We provide you with all the means of marketing that will help you to flourish your
-              product & publish your identity across web & globe.</p>
-            <a class="card__btn" href="" class="">More Details <i class="fa fa-angle-double-right"></i></a>
+        <div class="row">  
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <span class="stars"></span>
+                <h2 class="java">Digital Marketing</h2>
+                <p class="java">We provide you with all the means of marketing that will help you to flourish your product & publish your identity across web & globe.
+               </p>
+                <a class="card__btn" href="" class="">More Details <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="face face2"></div>
           </div>
 
-          <div class="col-md-4 card card--13">
-            <h2 class="card__title">Mobile Application</h2>
-            <img class="card__img" src="./assets/img/home-pages/Mobile-Application.jpg" alt="">
-            <p class="card__text">Our Mobile Applications can ease your work directly with your customers, allowing them
-              to access your services, anywhere - any time.</p>
-            <a class="card__btn" href="" class="" style="margin-top: -5px;">More Details <i
-                class="fa fa-angle-double-right"></i></a>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <span class="stars"></span>
+                <h2 class="java">Mobile Application</h2>
+                <p class="java">Our Mobile Applications can ease your work directly with your customers, allowing them to access your services, anywhere - any time.
+                </p>
+                <a class="card__btn" href="" class="">More Details <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="face face2"></div>
           </div>
 
-          <div class="col-md-4 card card--14">
-            <h2 class="card__title">Ecommerce Solutions</h2>
-            <img class="card__img" src="./assets/img/home-pages/Ecommerce-Solutions.jpg" alt="">
-            <p class="card__text" style="margin-top: 26%;">We will help you make your site better to sell your products
-              online to upgrade your virtual world and achieve an increase in your profits</p>
-            <a class="card__btn" href="" class="">More Details <i class="fa fa-angle-double-right"></i></a>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <span class="stars"></span>
+                <h2 class="java">Ecommerce Solutions</h2>
+                <p class="java">We will help you make your site better to sell your products
+                  online to upgrade your virtual world and achieve an increase in your profits
+                </p>
+                <a class="card__btn" href="" class="">More Details <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="face face2"></div>
           </div>
+        </div>  
 
-        </div>
       </div>
 
     </div> <!-- End Elite Solutions Sections -->
-
 
 
     <!-- ======= About Us Section ======= -->
@@ -380,7 +453,6 @@
 
       </div>
     </section><!-- End About Us Section -->
-
 
 
     <!-- ================ Start Cantact us =================== -->
@@ -456,51 +528,57 @@
     <div class="cards-work-container" data-aos="flip-down" data-aos-duration="1000" data-aos-easing="ease-in-sine">
       <div class="container">
         <h2>The Way We Work</h2><br>
-        <p>Our work culture is a pure combination of professionalism & flexibility.
-          <br>We believe in fulfilling clients
-          requirement & scaling the business that ensures an overall progressive growth.
-        </p>
 
-        <div class="row">
-
-          <div class="col-md-3">
-            <div class="card" style="width: 16rem;">
-              <img class="card-img-top" src="./assets/img/home-pages/Creativity.jpg" alt="Card image cap">
+        <div class="grid image-grid">
+          <p>Our work culture is a pure combination of professionalism & flexibility.
+            <br>We believe in fulfilling clients
+            requirement & scaling the business that ensures an overall progressive growth.
+          </p>
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="#">
+                <img class="tile-img tile-img1" src="./assets/img/home-pages/Creativity.jpg" alt="Image">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Creativity & Innovations</h5>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 16rem;">
-              <img class="card-img-top" src="./assets/img/home-pages/Planning.jpg" alt="Card image cap">
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="#">
+                <img class="tile-img tile-img2" src="./assets/img/home-pages/Planning.jpg" alt="Image">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Planning & Execution</h5>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 16rem;">
-              <img class="card-img-top" src="./assets/img/home-pages/Flexible.jpg" alt="Card image cap">
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="#">
+                <img class="tile-img tile-img3" src="./assets/img/home-pages/Flexible.jpg" alt="Image">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Flexible Handling</h5>
               </div>
             </div>
           </div>
 
-
-          <div class="col-md-3">
-            <div class="card" style="width: 16rem;">
-              <img class="card-img-top" src="./assets/img/home-pages/Dilevery.jpg" alt="Card image cap">
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="#">
+                <img class="tile-img tile-img4" src="./assets/img/home-pages/Dilevery.jpg" alt="Image">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">On Time Dilevery</h5>
               </div>
             </div>
           </div>
-
         </div>
+
       </div>
     </div> <!-- End Way We Work Sections -->
 
@@ -608,9 +686,6 @@
     </div>
 
 
-
-
-
   </main><!-- End main-->
 
   <!-- ================= Footer Sections =============== --->
@@ -706,14 +781,44 @@
 
 
 
+  <!-- TypewriterJS JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js"></script>
   <!-- Chat Live -->
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <div class="elfsight-app-1b8cf06e-c727-4e5e-93cc-4caae9edbe29"></div>
   <script src="https://unpkg.com/typeit@8.0.3/dist/index.umd.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!-- Header Animation -->
 
   <!-- Vendor JS Files -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/app.js"></script>
+
+    <!-- stats.js -->
+  <script src="assets/lib/stats.js"></script>
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+
+
+
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -726,6 +831,8 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+
+  <!-- Files Slider Header -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
