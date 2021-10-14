@@ -389,7 +389,7 @@ Start New Social Media
 
 @media screen and (max-width: 575px) {
   .header-container .header-top img {
-    width: 24% !important;
+    width: 28% !important;
     margin-top: 0px !important;
   } 
 }
@@ -816,7 +816,7 @@ canvas{
 
 .slider-detail ol.carousel-indicators {
   position: absolute;
-  bottom: 0;
+  bottom: 13%;
   margin: 0;
   left: 0;
   right: 0;
@@ -889,6 +889,9 @@ canvas{
     top: 25px;
     font-size: 15px !important;
   }
+  .slider-detail ol.carousel-indicators{
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 720px){
@@ -944,6 +947,9 @@ canvas{
   }
     .slider-detail .vbh .btn {
     margin-top: 40px;
+  }
+  .slider-detail ol.carousel-indicators{
+    bottom: 0;
   }
 }
 
@@ -1009,6 +1015,9 @@ canvas{
     width: 70%;
     padding: 9px 32px 14px 17px !important;
     margin: 0px auto !important;
+  }
+  .slider-detail ol.carousel-indicators{
+    bottom: 0;
   }
 }
 .slider-detail .carousel-caption {
@@ -1493,8 +1502,8 @@ canvas{
   56%,
   100% {
 
-  text-shadow: 0 0 5px #fff, 0 0 15px #000, 0 0 20px #fff, 0 0 40px #000, 0 0 60px #fff, 0 0 10px #000, 0 0 98px #fff;
-    color: #fff6a9;
+  text-shadow: 0 0 5px #fff, 0 0 15px #252E67, 0 0 20px #fff, 0 0 40px #252E67, 0 0 60px #fff, 0 0 10px #252E67, 0 0 98px #fff;
+    color: #fff;
   }
 }
 
@@ -1502,7 +1511,7 @@ canvas{
   20%,
   24%,
   55% {
-    color: #111;
+    color: #252E67;
     text-shadow: none;
   }
 
@@ -1963,63 +1972,6 @@ font-style: italic;
   color: #fff;
   background-color: #252e67;
   border: 2px solid #cccccc;
-}
-/** * Card #12 */
- .card--12 {
-   --mouseX12: 0;
-   --mouseY12: 0;
-   perspective: 700px;
-}
- .card--12 .card__title {
-   transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * 1px), 0);
-}
- .card--12 .card__img {
-   transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * 1px));
-}
- .card--12 .card__text {
-   transform: translate3d(calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px), 0);
-}
- .card--12 .card__btn {
-   transform: translate3d(calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px));
-}
- 
-/** * Card #13 */
- .card--13 {
-   --mouseX12: 0;
-   --mouseY12: 0;
-   perspective: 700px;
-}
- .card--13 .card__title {
-   transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * 1px), 0);
-}
- .card--13 .card__img {
-   transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * 1px));
-}
- .card--13 .card__text {
-   transform: translate3d(calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px), 0);
-}
- .card--13 .card__btn {
-   transform: translate3d(calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px));
-}
-
-
-/** * Card #14 */
- .card--14 {
-   --mouseX12: 0;
-   --mouseY12: 0;
-   perspective: 700px;
-}
- .card--14 .card__title {
-   transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * 1px), 0);
-}
- .card--14 .card__img {
-   transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * 1px));
-}
- .card--14 .card__text {
-   transform: translate3d(calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px), 0);
-}
- .card--14 .card__btn {
-   transform: translate3d(calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px));
 }
 
 
@@ -2710,7 +2662,7 @@ font-style: italic;
 }
 @media screen and (max-width: 48em){
   .postcard__image {
-    height: min(70vw, 20rem);
+    height: min(44vw, 20rem);
   }
 }
 
@@ -2795,6 +2747,7 @@ font-style: italic;
 .cards-slider .carousel-inner .card{
   cursor: pointer;
   transition: 0.8s ease;
+  height: 300px;
 }
 
 .cards-slider .carousel-inner .card:hover{
@@ -2802,12 +2755,29 @@ font-style: italic;
   background-color: #2d40822b;
   color: #fff;
 }
-.cards-slider .carousel-inner .card .card-body{
+.cards-slider  .card .card-body{
   text-align: center;
-  padding: 16%;
+  padding: 16% ;
 }
 
+.cards-slider  .card .card-body .card-text{
+  text-align: center;
+  
+}
+@media screen and (max-width: 991px) {
+  .cards-slider  .card .card-body .card-text{
+    text-align: center;
+    
+  }
+  .cards-slider  .card {
 
+  }
+}
+
+/** Start Test Cards Slider Category Page **/
+
+
+/** End Test Cards Slider Category Page **/
 /*--------------------------------------------------------------
 # Program Units Section
 --------------------------------------------------------------*/

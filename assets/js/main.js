@@ -18,26 +18,26 @@
     }
   });
 
-var swiper = new Swiper(".swiper-container", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
-    depth: 350,
-    modifier: 1,
-    slideShadows: true
-  },
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination"
-  }
-});
+  var swiper = new Swiper(".swiper-container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 0,
+      depth: 350,
+      modifier: 1,
+      slideShadows: true
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    }
+  });
 
 
 /*
@@ -171,68 +171,8 @@ cardCarousel3d(document.querySelectorAll('.card-carousel'));
     aos_init();
   });
 
-
-
-  // $('#typedtext0').click(function(){
-  //   typing(0)
-  // });
-
 })(jQuery);
 
-
-var card12 = document.querySelector(".card--12");
-
-card12.addEventListener('mousemove', function (e) {
-
-  var wh = window.innerHeight / 2,
-    ww = window.innerWidth / 2;
-  card12.style.setProperty('--mouseX12', (e.clientX - ww) / 25);
-  card12.style.setProperty('--mouseY12', (e.clientY - wh) / 25);
-
-});
-
-card12.addEventListener('mouseleave', function (e) {
-
-  card12.style.setProperty('--mouseX12', 0);
-  card12.style.setProperty('--mouseY12', 0);
-
-});
-
-var card13 = document.querySelector(".card--13");
-
-card13.addEventListener('mousemove', function (e) {
-
-  var wh = window.innerHeight / 2,
-    ww = window.innerWidth / 2;
-  card13.style.setProperty('--mouseX12', (e.clientX - ww) / 25);
-  card13.style.setProperty('--mouseY12', (e.clientY - wh) / 25);
-
-});
-
-card13.addEventListener('mouseleave', function (e) {
-
-  card13.style.setProperty('--mouseX12', 0);
-  card13.style.setProperty('--mouseY12', 0);
-
-});
-
-var card14 = document.querySelector(".card--14");
-
-card14.addEventListener('mousemove', function (e) {
-
-  var wh = window.innerHeight / 2,
-    ww = window.innerWidth / 2;
-  card14.style.setProperty('--mouseX12', (e.clientX - ww) / 25);
-  card14.style.setProperty('--mouseY12', (e.clientY - wh) / 25);
-
-});
-
-card14.addEventListener('mouseleave', function (e) {
-
-  card14.style.setProperty('--mouseX12', 0);
-  card14.style.setProperty('--mouseY12', 0);
-
-});
 
 
 /**
@@ -244,13 +184,7 @@ const glightbox = GLightbox({
 
 
 
-
-
-
-
-
-
-/** Header Animations **/
+/** Card Slider Tabs category page  Animations **/
  
 
 
