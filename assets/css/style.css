@@ -663,7 +663,7 @@ canvas{
 
   }
   #particles-js{
-    height: 80vh;
+    height: 70vh;
   }
 }
 /* Start Header Slider  */
@@ -1482,14 +1482,14 @@ canvas{
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
   text-shadow: 0 0 5px #fff, 0 0 15px #252E67, 0 0 20px #fff, 0 0 40px #252E67, 0 0 60px #fff, 0 0 10px #252E67, 0 0 98px #fff;
-  color: #fff6a9;
+  color: #ffff;
 }
 
 @-webkit-keyframes blink {
   20%,
   24%,
   55% {
-    color: #111;
+    color: #fff;
     text-shadow: none;
   }
 
@@ -1511,7 +1511,7 @@ canvas{
   20%,
   24%,
   55% {
-    color: #252E67;
+    color: #fff;
     text-shadow: none;
   }
 
