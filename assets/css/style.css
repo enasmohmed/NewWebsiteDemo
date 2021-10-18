@@ -260,7 +260,7 @@ section {
     margin-top: -12px;
     width: 66%;
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .header-container .header-top img {
     width: 70%;
     margin-top: -3px; } 
@@ -381,14 +381,14 @@ Start New Social Media
     margin-top: 0px;
     width: 57%;
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .header-container .header-top img {
-    width: 30% !important;
+    width: 20% !important;
     margin-top: -9px !important;
   } 
 }
 
-@media screen and (max-width: 575px) {
+@media (max-width: 575px) {
   .header-container .header-top img {
     width: 28% !important;
     margin-top: 0px !important;
@@ -664,7 +664,7 @@ canvas{
 
   }
   #particles-js{
-    height: 70vh;
+    height: 100vh;
   }
 }
 /* Start Header Slider  */
@@ -1380,6 +1380,253 @@ canvas{
 
 /** Start Testing Slider Header One Section  **/
 
+.swiper-header {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  position: absolute;
+  top: -2%;
+}
+@media (max-width: 575px){
+  .swiper-header .swiper-slide .info{
+    text-align: center !important;
+    top: 5%;
+    left: 0 !important;
+    margin-top: 0% !important;
+  } 
+  .swiper-header .swiper-slide img {
+    width: 100% !important;
+    min-width: 700px !important;
+    margin-top: 0% !important;
+    margin-left: 18% !important;
+    margin-right: 18% !important;
+  }
+  .swiper-header .swiper-slide .content{
+    margin-top: 2%;
+    font-size: 16px !important;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+}
+
+@media (max-width: 767px){ 
+    .swiper-header .swiper-slide .info{
+    text-align: center !important;
+    top: 5%;
+    left: 0 !important;
+    margin-top: 0% !important;
+  } 
+  .swiper-header .swiper-slide img {
+    width: 100% !important;
+    min-width: 700px !important;
+    margin-top: 0% !important;
+    margin-left: 18% !important;
+    margin-right: 18% !important;
+  }
+  .swiper-header .swiper-slide .content{
+    margin-top: 2%;
+    font-size: 16px !important;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+}
+@media (max-width: 991px){
+  .swiper-header .swiper-slide .info{
+    text-align: left !important;
+    top: 30%;
+    left: 6% !important;
+    margin-top: 0% !important;
+  } 
+  .swiper-header .swiper-slide img {
+    width: 100% !important;
+    min-width: 700px !important;
+    margin-top: 0% !important;
+    margin-left: 0% !important;
+    margin-right: -6% !important;
+  }
+  .swiper-header .swiper-slide .content{
+    margin-top: 2%;
+    font-size: 16px !important;
+    text-align: left;
+    margin-left: 6%;
+    margin-right: 0;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+}
+
+.swiper-header .swiper-slide{
+  width: 100% !important;
+  color: #fff;
+}
+
+.swiper-header .header-slide{
+  margin-bottom: 15px;
+  padding: 2%;
+}
+.swiper-header .swiper-slide .info{
+  margin: 0 auto;
+  text-align: left;
+  float: left;
+  left: 6%;
+  justify-content: center;
+  margin-top: 13%;
+  padding: 10px;
+  color: #fff;
+}
+.swiper-header .swiper-slide img.vert-move{
+  margin-top: -5%;
+  margin-right: 15%;
+  float: right;
+  min-width: 1000px;
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.swiper-header .swiper-slide img .active{
+
+}
+.swiper-header .swiper-slide .title{
+  margin-left: 5%;
+  color: #fff;
+  font-size: 35px;
+}
+
+.swiper-slide-active .title {
+  animation: move 3s;
+  -webkit-animation: move 3s;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 600%; 
+  }
+
+  to {
+    margin-left: 5%;
+    width: 200%;
+  }
+}
+            
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 400%; 
+  }
+
+  to {
+    margin-left: -40px;
+    width: 200%;
+  }
+}
+
+.swiper-header .swiper-slide .content{
+  font-size: 18px;
+}
+
+.swiper-slide-active .content{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+
+
+
+.swiper-button-next{
+  right: 60px;
+}
+.swiper-button-prev {
+  left: 60px;
+}
+.swiper-button-next, .swiper-button-prev {
+   color: #fff;
+}
+
+ .swiper-slide-duplicate, .swiper-slide {
+   font-size: 18px;
+  /* Center slide text vertically */
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+  /* Slide content */
+}
+ .swiper-slide-duplicate .description, .swiper-slide .description, .swiper-slide-duplicate {
+   display: block;
+   opacity: 0;
+   transition: 0.5s ease 0.5s;
+}
+
+ .swiper-slide-duplicate-active .description, .swiper-slide-active .description {
+   font-size: 16px;
+   color: #fff;
+   transition: opacity 0.5s ease 0.75s;
+}
+ .swiper-progress-bar {
+   position: relative;
+   width: 100%;
+   display: block;
+   z-index: 1;
+   height: 2px;
+}
+.swiper-pagination{
+  bottom: auto;
+  margin-top: -33px;
+  color: #fff;
+}
+ .swiper-progress-bar .slide_progress-bar {
+   position: absolute;
+   height: 3px;
+   background: rgba(0, 0, 0, 0.3);
+   width: auto;
+   clear: both;
+   opacity: 0;
+   bottom: 50px;
+   left: 0;
+   right: 0;
+}
+ .swiper-progress-bar .slide_progress-bar:after {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #fff;
+   height: 100%;
+   width: 0;
+   content: "";
+   transition: 0.1s width linear;
+}
+ .swiper-progress-bar.active .slide_progress-bar {
+   opacity: 1;
+}
+ .swiper-progress-bar.animate .slide_progress-bar:after {
+   transition: width linear;
+   transition-delay: unset;
+   width: 100%;
+   transition-duration: 5s;
+}
+ 
 /** End Testing Slider Header One Section **/
 
 /* ========================= Button Haver ======================== */ 
@@ -2190,7 +2437,7 @@ font-style: italic;
    padding-top: 20px;
    padding-bottom: 50px;
 }
-.swiper-slide {
+.swiper-container .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 320px;
