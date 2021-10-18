@@ -245,7 +245,7 @@ var mySwiper = new Swiper ('.program__units', {
     },
     effect: 'creative',
     speed: 800,
-    loop: true,
+    loop: false,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction"
