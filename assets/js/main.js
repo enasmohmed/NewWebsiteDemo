@@ -13,7 +13,6 @@
     if ($('#preloader').length) {
       $('#preloader').delay(1).fadeOut('fast', function () {
         $(this).remove();
-        $('#slider__li').click()
       });
     }
   });
@@ -184,7 +183,58 @@ const glightbox = GLightbox({
 
 
 
-/** Card Slider Tabs category page  Animations **/
+/** Card Slider DoxERP Programe Features category page  **/
  
 
 
+jQuery(document).ready(function($) {
+"use strict";
+$('#customers-testimonials').owlCarousel( {
+    loop: true,
+    center: true,
+    items: 3,
+    margin: 30,
+    autoplay: true,
+    dots:true,
+    nav:true,
+    navigation : true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      1170: {
+        items: 3
+      }
+    }
+  });
+});
+
+
+/** Program Units Section **/
+var mySwiper = new Swiper ('.program__units', {
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1
+    }
+  }
+});
+ 
+
+/** Test Slider Header One Section **/
+ 

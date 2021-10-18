@@ -275,6 +275,7 @@ Start New Social Media
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
+  width: 0;
 }
 
 .body-social-media .social ul{
@@ -1376,6 +1377,11 @@ canvas{
   border-radius: 0;
 }
 
+
+/** Start Testing Slider Header One Section  **/
+
+/** End Testing Slider Header One Section **/
+
 /* ========================= Button Haver ======================== */ 
 /*--------------------------------------------------------------
 # About Us
@@ -1695,6 +1701,7 @@ canvas{
   height:100%;
   cursor:pointer;
   transition:.5s;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility:hidden;
 }
 .Box .Front img{
@@ -2691,9 +2698,8 @@ font-style: italic;
 
 .postcard__body:hover .postcard__title {
   opacity: 0.8;
-  background: linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
   padding: 5px;
-  color: #fff;
+  color: #252E67;
 }
 
 .postcard__title--link {
@@ -2702,7 +2708,7 @@ font-style: italic;
   transition:  0.6s ease-in;
 }
 .postcard__body:hover .postcard__title--link{
-  color: #fff !important;
+  color: #252E67 !important;
 }
 
 .postcard__description {
@@ -2715,22 +2721,50 @@ font-style: italic;
 
 
 /*--------------------------------------------------------------
-# Slider Cards Sections
+# Slider DoxERP Programe Features Cards Sections
 --------------------------------------------------------------*/
-.cards-slider{
+.testimonials {
   background: linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
-  padding: 3%;
-  margin-bottom: 20px;
-  margin-top: 5%;
+   position: relative;
+   padding: 3%;
 }
-
-
-.cards-slider h3{
-  color: #fff;
+.testimonials h3{
+  text-align: center;
+  color: #FFF;
+  font-size: 33px;
+  padding-bottom: 3%;
   font-weight: bold;
-  font-size: 32px;
+  text-transform: uppercase;
+  padding-top: 22px;
 }
-.cards-slider .carousel-inner .card i{
+
+ #customers-testimonials .item-details {
+   color: #000;
+   padding: 20px 10px;
+   text-align: center;
+   margin-top: 5%;
+}
+ #customers-testimonials .item-details h5 {
+   margin: 0 0 15px;
+   font-size: 18px;
+   line-height: 18px;
+}
+ #customers-testimonials .item-details h5 span {
+   color: red;
+   float: right;
+   padding-right: 20px;
+}
+ #customers-testimonials .item-details p {
+   font-size: 14px;
+}
+ #customers-testimonials .item {
+   text-align: center;
+   margin-bottom: 50px;
+   border: 2px solid #ddd;
+   background: #FFF;
+   border-radius: 5%;
+}
+#customers-testimonials .item i{
   margin: 0 auto;
   padding: 20px;
   background: #252e67;
@@ -2740,41 +2774,35 @@ font-style: italic;
   margin-top: 25%;
   transition: 0.6s ease;
 }
-
-.cards-slider .carousel-inner .card:hover i{
-  border: 3px solid #fff;
+ .owl-carousel .owl-nav [class*='owl-'] {
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
 }
-
-.cards-slider .carousel-inner .card{
-  cursor: pointer;
-  transition: 0.8s ease;
-  height: 300px;
+ .owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+   background-color: #d6d6d6;
 }
-
-.cards-slider .carousel-inner .card:hover{
-  border: 5px solid #fff;
-  background-color: #2d40822b;
-  color: #fff;
+ .owl-carousel {
+   position: relative;
 }
-.cards-slider  .card .card-body{
-  text-align: center;
-  padding: 16% ;
+.owl-carousel .owl-next, 
+.owl-carousel .owl-prev {
+   width: 40px;
+   height: 40px;
+   line-height: 40px !important;
+   border-radius: 50%;
+   position: absolute;
+   top: 30%;
+   font-size: 30px !important;
+   color: #fff !important;
+   border: 1px solid #ddd !important;
+   text-align: center;
 }
-
-.cards-slider  .card .card-body .card-text{
-  text-align: center;
-  
+ .owl-carousel .owl-prev {
+   left: -45px;
 }
-@media screen and (max-width: 991px) {
-  .cards-slider  .card .card-body .card-text{
-    text-align: center;
-    
-  }
-  .cards-slider  .card {
-
-  }
+ .owl-carousel .owl-next {
+   right: -45px;
 }
-
 /** Start Test Cards Slider Category Page **/
 
 
@@ -2799,107 +2827,116 @@ font-style: italic;
 }
 
 
-.programe-units  .card {
-  position: relative;
-  min-width: 220px;
-  height: 440px;
+.program__units {
+   -webkit-tap-highlight-color: transparent;
+}
+.program__units .swiper-slide {
+  height: auto;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  overflow: visible;
+}
+
+
+.m-slider {
+   margin: 0 auto;
+   padding: 30px;
+}
+.program__units .box{
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
 }
-
-
-.programe-units  .card .box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  background: linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
-  border-radius: 15px;
+.swiper-slide:hover .box {
+  transform: translateY(-50px);
+  z-index: 999;
+}
+.m-slider .m-slider__item {
+   display: flex;
+   flex: 0 0 auto;
+/*  width: 320px !important;*/
+  width: 100%;
+}
+.m-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  border-radius: 5%;
+  background: linear-gradient(0deg, #252E67 40%, #4b8cf9fa 100%) !important;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.programe-units  .card .box:hover {
-  transform: translateY(-50px);
-}
-
-.programe-units  .card .box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.programe-units  .card .box .content {
-  padding: 20px;
-  text-align: center;
-}
-
-.programe-units  .card .box .content h2 {
-  position: absolute;
-  top: -10px;
-  right: 30px;
-  font-size: 8rem;
-  color: rgba(255, 255, 255, 0.1);
-}
-.programe-units .card .content .icon{
+.m-card .m-card__header {
   margin: 0 auto;
   padding: 22px;
   background: #252e67;
   border-radius: 50%;
   color: #ffff;
   font-size: 35px;
-  margin-top: 25%;
+  margin-top: 5%;
   border: 3px solid #fff;
 }
-.programe-units  .card .box .content h3 {
-  font-size: 1.8rem;
+.m-card .m-card__body {
+  text-align: center;
+}
+.m-card .m-card__body h3{
+  font-size: 20px;
   color: #fff;
   z-index: 1;
   transition: 0.5s;
   margin-bottom: 15px;
   margin-top: 20px;
+  font-weight: bolder;
 }
-
-.programe-units  .card .box .content p {
-  font-size: 1rem;
+.m-card .m-card__body p{
+  font-size: 15px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ddd;
   z-index: 1;
   transition: 0.5s;
   text-align: justify;
-  padding-bottom: 10%;
+  padding-bottom: 0%;
 }
-
-.programe-units  .card .box .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  background: black;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  margin-top: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+.m-card:active {
+   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
-.programe-units  .card .box .content a:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-  background: #fff;
-  color: #000;
+ .slider {
+   margin: 0 -30px;
 }
+ .cards {
+   margin-top: 30px;
+}
+ .cards .cards__note {
+   margin-top: 30px;
+}
+ .cards .cards__body {
+   margin-top: 30px;
+}
+ @media screen and (min-width: 768px) {
+   .cards .cards__body {
+     display: flex;
+  }
+}
+ .cards .cards__item {
+   display: flex;
+   flex: 0 1 auto;
+   margin-top: 30px;
+   width: 100%;
+}
+ @media screen and (min-width: 768px) {
+   .cards .cards__item {
+     margin-top: 0;
+  }
+}
+ @media screen and (min-width: 768px) {
+   .cards .cards__item:not(:last-of-type) {
+     margin-right: 30px;
+  }
+}
+ 
 
 /** ===================== Start Tabs Section ===================== **/
 
@@ -3019,7 +3056,7 @@ font-style: italic;
  opacity: 1;
  background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
  -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
+ -webkit-text-fill-color: #3553a1;
 }
 .tablinks p {
  opacity: 0.6;
@@ -3033,6 +3070,7 @@ font-style: italic;
  color: #686868;
  backface-visibility: hidden;
  font-weight: 400;
+ font-size: 20px;
 }
 .tablinks:hover p {
  color: white;
@@ -3618,10 +3656,7 @@ font-style: italic;
 
 
 
-
-
-
-
+ 
 
 
 
