@@ -168,8 +168,9 @@
               <article class="postcard col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="3000"
                 data-aos-easing="ease-in-out-cubic">
                 <!-- Image -->
-                <div class="postcard__image" role="img" aria-label="postcard image man looking to left"
-                  title="image"></div>
+                <div class="postcard__image" role="img" aria-label="postcard image man looking to left" title="image">
+                    <img class="d-block w-100" src="assets/img/cards/DoxERP-BG-Logo-01.png">
+                </div>
 
                 <!-- Body -->
                 <div class="postcard__body">
@@ -419,35 +420,6 @@
   </footer>
   <!-- End Footer -->
 
-  <script type="text/javascript">
-    // tabs
-
-    var tabLinks = document.querySelectorAll(".tablinks");
-    var tabContent = document.querySelectorAll(".tabcontent");
-
-
-    tabLinks.forEach(function (el) {
-      el.addEventListener("click", openTabs);
-    });
-
-
-    function openTabs(el) {
-      var btnTarget = el.currentTarget;
-      var country = btnTarget.dataset.country;
-
-      tabContent.forEach(function (el) {
-        el.classList.remove("active");
-      });
-
-      tabLinks.forEach(function (el) {
-        el.classList.remove("active");
-      });
-
-      document.querySelector("#" + country).classList.add("active");
-
-      btnTarget.classList.add("active");
-    }
-  </script>
   <!-- Chat Live -->
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <div class="elfsight-app-1b8cf06e-c727-4e5e-93cc-4caae9edbe29"></div>
