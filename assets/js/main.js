@@ -239,10 +239,7 @@ var mySwiper = new Swiper ('.program__units', {
 /** Test Slider Header One Section **/
  $(document).ready(function () {
   var swiper = new Swiper(".swiper-header", {
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    autoplay: false,
     effect: 'creative',
     speed: 800,
     loop: false,
