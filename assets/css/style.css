@@ -1470,7 +1470,7 @@ canvas{
     margin-top: 0% !important;*/
   } 
   .swiper-header .swiper-slide .info .title{
-    margin-right: 20%;
+    margin-right: 15%;
     color: #fff;
     font-size: 35px;
     text-align: center;
@@ -1481,8 +1481,7 @@ canvas{
   .swiper-header .swiper-slide img {
     min-width: 700px !important;
     margin-top: -21% !important;
-    margin-left: -65% !important;
-    -webkit-margin-start: -40% !important; //Sfari
+    margin-left: -55% !important;
   }
   .swiper-header .swiper-slide .content{
     margin-top: 2%;
